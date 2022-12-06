@@ -21,11 +21,11 @@ public class JvmExperience {
         Thread.sleep(3_000);
 
         System.out.println(LocalTime.now() + ": now see heap");
-        List<SimpleObject> simpleObjects = createSimpleObjects(5_000_000);
+        List<SimpleObject> simpleObjects = createSimpleObjects(50_000_000);
         Thread.sleep(3_000);
-        simpleObjects.addAll(createSimpleObjects(5_000_000));
+        simpleObjects.addAll(createSimpleObjects(25_000_000));
         Thread.sleep(3_000);
-        simpleObjects.addAll(createSimpleObjects(5_000_000));
+        simpleObjects.addAll(createSimpleObjects(1_500_000));
         Thread.sleep(3_000);
     }
 
